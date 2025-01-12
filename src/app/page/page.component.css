@@ -1,0 +1,13 @@
+.inner{
+    position:absolute;
+    z-index:1;
+    bottom:10%;
+    left:58%;
+    height:12%;
+    display:inline;
+}
+.rating{
+	position:relative;
+    bottom: 5%;
+    color:red;
+}

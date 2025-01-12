@@ -1,0 +1,39 @@
+<div class="navbar">
+  <a routerLink='/page' routerLinkActive="active">Home</a>
+  <a routerLink='/page' routerLinkActive="">Categories</a>
+  <div class="dropdown">
+    <button class="dropbtn">Filter <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-content">
+      <a>
+        <label for="points">Price Range:</label>
+        <input type="range" id="points" name="points" min="1000" max="10000">
+      </a>
+      <a class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text"></label>
+
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text"></label>
+          
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text"></label>
+          
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text"></label>
+          
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text"></label>
+      </a>
+      <input type="submit">
+    </div>
+  </div>
+
+  <input type="text" placeholder="Looking for something?" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <a style="float:right" routerLink='/register' routerLinkActive="" >Register</a>
+  <a style="float:right" routerLink='/login' routerLinkActive="">Login</a>
+</div>
+
+<div>
+<router-outlet></router-outlet>
+</div>
