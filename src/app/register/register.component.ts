@@ -21,6 +21,7 @@ export class RegisterComponent {
   }
 }
 export class Register{
+
    Email:string;
    Password:string;
    Username:string;
@@ -31,12 +32,12 @@ export class Register{
    
    constructor()
    {
-    this.Email='';
-    this.Password='';
-    this.Username='';
-    this.Role='';
-    this.Name='';
-    this.Phone='';
-    this.Address='';
+    this.Email="";
+    this.Password="";
+    this.Username="";
+    this.Role="";
+    this.Name="";
+    this.Phone="";
+    this.Address="";
    }
 }

@@ -4,47 +4,45 @@
         <h1>Registration</h1>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" [(ngModel)]="RegObj.Name" placeholder="Full name" required name="name">
+                    <input type="text" [(ngModel)]="RegObj.Name" placeholder="Full name" name="name" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-field">
-                    <input type="text" [(ngModel)]="RegObj.Username" placeholder="Username" required>
+                    <input type="text" [(ngModel)]="RegObj.Username" placeholder="Username" name="Username"required>
                     <i class='bx bxs-user'></i>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="email" [(ngModel)]="RegObj.Email" placeholder="Email" required>
+                    <input type="email" [(ngModel)]="RegObj.Email" placeholder="Email" name="Email" required>
                     <i class='bx bxs-envelope'></i>
                 </div>
                 <div class="input-field">
-                    <input type="text" [(ngModel)]="RegObj.Phone" placeholder="Phone" required>
+                    <input type="text" [(ngModel)]="RegObj.Phone" placeholder="Phone" name="Phone" required>
                     <i class='bx bxs-phone' ></i>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" [(ngModel)]="RegObj.Role" placeholder="Admin/buyer/seller" required>
+                    <input type="text" [(ngModel)]="RegObj.Role" placeholder="Admin/buyer/seller" name="Role" required>
                     <i class='bx bxs-lock-open-alt' ></i>
                 </div>
                 <div class="input-field">
-                    <input type="text" [(ngModel)]="RegObj.Address" placeholder="Address" required> 
+                    <input type="text" [(ngModel)]="RegObj.Address" placeholder="Address" name="Address" required> 
                     <i class='bx bxs-lock-alt' ></i>   
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="password"  placeholder="Password" required>
+                    <input type="password"  placeholder="Password" name="Password" required>
                     <i class='bx bxs-lock-open-alt' ></i>
                 </div>
                 <div class="input-field">
-                    <input type="password" [(ngModel)]="RegObj.Password" placeholder="Confirm Password" required> 
+                    <input type="password" [(ngModel)]="RegObj.Password" name="Password" placeholder="Confirm Password" required> 
                     <i class='bx bxs-lock-alt' ></i>   
                 </div>
             </div>
-
-            <label><input type="checkbox">I hearby declare that the above information provided by me is true and correct. </label>
             <button type="submit" (click)="onRegister()" class="btn" >Register</button>
         </form>
     </div>

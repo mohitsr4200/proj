@@ -25,11 +25,9 @@ export class LoginComponent {
 export class Login{
    Email:string;
    password:string;
-   remember:boolean;
    constructor()
    {
     this.Email='';
     this.password='';
-    this.remember=false;
    }
 }

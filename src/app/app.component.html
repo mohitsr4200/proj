@@ -1,9 +1,10 @@
 <div class="navbar">
   <a routerLink='/page' routerLinkActive="active">Home</a>
-  <a routerLink='/page' routerLinkActive="">Categories</a>
   <div class="dropdown">
     <button class="dropbtn">Filter <i class="fa fa-caret-down"></i> </button>
     <div class="dropdown-content">
+      <div>
+        <a>Categories</a>
       <a>
         <label for="points">Price Range:</label>
         <input type="range" id="points" name="points" min="1000" max="10000">
@@ -24,6 +25,7 @@
           <input type="radio" id="star1" name="rate" value="1" />
           <label for="star1" title="text"></label>
       </a>
+      </div>
       <input type="submit">
     </div>
   </div>
