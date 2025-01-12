@@ -1,2 +1,28 @@
-<div> Hello World!</div>
+<div class="product-container">
+    <!-- Products will be inserted here dynamically -->
+</div>
 
+<script>
+
+function  renderProducts(products) {
+    
+  const container = document.querySelector('.product-container');
+  
+  products.forEach(product => {
+    const productBlock = document.createElement('div');
+    productBlock.classList.add('product');
+    
+    productBlock.innerHTML = `
+      <img src="https://via.placeholder.com/200x150" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.description}</p>
+      <p class="price">${product.price}</p>
+    `;
+    
+    container.appendChild(productBlock);
+  });
+}
+
+// Render products on page load
+renderProducts(products);
+</script>
